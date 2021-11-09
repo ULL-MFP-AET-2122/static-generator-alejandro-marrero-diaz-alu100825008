@@ -3,6 +3,13 @@ title: "Otro nuevo post"
 alumnos: 20
 chuchu: 4
 esmartes: true
+frutas:
+  - naranjas
+  - peras
+  - limones
+  - plátanos
+  - fresas
+  - uvas
 ---
 
 # {{ page.title }}
@@ -21,3 +28,7 @@ La respuesta a cuánto vale chuchu es {{ page.chuchu }}.
 
   ## Bueno ya queda menos.
 {% endif %}
+Tengo que comprar:
+{% for fruta in page.frutas %}
+1. {{ fruta }}
+{% endfor %}
