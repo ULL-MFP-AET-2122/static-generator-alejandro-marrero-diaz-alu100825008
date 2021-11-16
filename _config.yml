@@ -291,5 +291,4 @@ defaults:
 
 # Scripts para usar en toda la web
 footer_scripts:
-  - /assets/js/mathjax-configure.js
   - "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"
