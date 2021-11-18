@@ -1,3 +1,7 @@
+task :default => :deploy do
+  sh "git add .; git commit -am new-version; git push -u origin master"
+end
+
 task :serve do
   sh "bundle exec jekyll serve"
 end 
