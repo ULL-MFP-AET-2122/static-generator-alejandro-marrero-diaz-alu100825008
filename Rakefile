@@ -15,5 +15,5 @@ task :bw do
 end 
 
 task :deploy do
-  sh "cd _site; git add .; git commit -am new-deploy; git push -u origin master"
+  sh "cd _site; git init; git remote add origin https://github.com/amarrerod/amarrerod.github.io.git; touch .nojekyll; git add .; git commit -am new-deploy; git push -u origin master"
 end
